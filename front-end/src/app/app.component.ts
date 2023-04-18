@@ -25,9 +25,14 @@ export class AppComponent implements OnInit {
           precio: 525.54,
         },
       ];
-    }, 10000);
+    }, 3000);
   }
   title = 'Lo que yo quiera imprimir';
+  ocultar = false;
+  handleEvent(event: Event) {
+    const result = (event.target as HTMLInputElement).value;
+    return result;
+  }
   edad = 37;
   peliculasEnCines: any;
   peliculasProximosEstrenos = [
