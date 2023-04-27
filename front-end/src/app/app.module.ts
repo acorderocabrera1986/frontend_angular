@@ -9,7 +9,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ListadoGenericoComponent } from './utilidades/listado-generico/listado-generico.component';
 import { MaterialModule } from './material/material.module';
 import { RatingComponent } from './utilidades/rating/rating.component';
-import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { IndiceGenerosComponent } from './generos/indice-generos/indice-generos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
     MenuComponent,
     ListadoGenericoComponent,
     RatingComponent,
-    CicloDeVidaComponent,
+    LandingPageComponent,
+    IndiceGenerosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   providers: [],

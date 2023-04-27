@@ -7,11 +7,5 @@
 
   <app-ciclo-de-vida *ngIf="ocultar" [titulo]="title"></app-ciclo-de-vida> -->
   <!-- <app-rating (rated)="manejarRated($event)"></app-rating> -->
-  <h2>En cines</h2>
-  <app-listado-peliculas [peliculas]="peliculasEnCines"></app-listado-peliculas>
-
-  <h2>Futuro estreno</h2>
-  <app-listado-peliculas
-    [peliculas]="peliculasProximosEstrenos"
-  ></app-listado-peliculas>
+  <router-outlet></router-outlet>
 </div>
