@@ -10,6 +10,6 @@ export class ListadoGenericoComponent implements OnInit {
   listado:any;
   constructor() {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 }
