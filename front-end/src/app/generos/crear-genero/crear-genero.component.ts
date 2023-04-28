@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,8 +8,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./crear-genero.component.css'],
 })
 export class CrearGeneroComponent {
-  constructor(private router: Router) {}
-  ngOnInit(): void {}
+  form: any;
+  constructor(private router: Router, private formBuilder: FormBuilder) {
+    form: FormGroup
+  }
+  ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      nombre : ''
+    })
+  }
   guardarCambio() {
     //..guardar los cambios
     this.router.navigate(['/generos'])
