@@ -22,6 +22,7 @@ import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.com
 import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
 import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormularioGeneroComponent } from './generos/formulario-genero/formulario-genero.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     EditarGeneroComponent,
     EditarCineComponent,
     EditarPeliculaComponent,
+    FormularioGeneroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, ReactiveFormsModule],
   providers: [],
